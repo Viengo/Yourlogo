@@ -5866,7 +5866,7 @@ tbody.collapse.in {
 
 /* line 234, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav {
-  margin: 30px 0 0 28px;
+  margin: 30px 0 0;
 }
 /* line 237, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav > li > a {
@@ -5902,8 +5902,8 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   /* line 234, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav {
-    float: left;
-    margin: 30px 0 0 28px;
+    float: right;
+    margin: 30px 0 0;
   }
   /* line 272, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav > li {
@@ -8845,88 +8845,89 @@ header {
 }
 /* line 19, ../scss/widgets/_header.scss */
 header .nav-style .nav {
-  margin-left: 76px;
+  float: right;
   text-align: center;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 19, ../scss/widgets/_header.scss */
   header .nav-style .nav {
-    margin: 15px 0 0 28px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 767px) {
   /* line 19, ../scss/widgets/_header.scss */
   header .nav-style .nav {
-    margin: 15px auto;
+    float: none;
+    margin: 15px auto 0;
   }
 }
-/* line 28, ../scss/widgets/_header.scss */
+/* line 29, ../scss/widgets/_header.scss */
 header .nav-style .nav li {
   padding-left: 17px;
   border-bottom: 1px solid #f3e2dd;
   text-align: center;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 28, ../scss/widgets/_header.scss */
+  /* line 29, ../scss/widgets/_header.scss */
   header .nav-style .nav li {
     padding-left: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 28, ../scss/widgets/_header.scss */
+  /* line 29, ../scss/widgets/_header.scss */
   header .nav-style .nav li {
     padding-left: 10px;
   }
 }
 @media (max-width: 767px) {
-  /* line 28, ../scss/widgets/_header.scss */
+  /* line 29, ../scss/widgets/_header.scss */
   header .nav-style .nav li {
     padding: 0;
   }
 }
-/* line 41, ../scss/widgets/_header.scss */
+/* line 42, ../scss/widgets/_header.scss */
 header .nav-style .nav li:first-of-type {
   padding-left: 0;
 }
-/* line 43, ../scss/widgets/_header.scss */
+/* line 44, ../scss/widgets/_header.scss */
 header .nav-style .nav li:first-of-type a {
   padding-left: 0;
 }
 @media (max-width: 767px) {
-  /* line 43, ../scss/widgets/_header.scss */
+  /* line 44, ../scss/widgets/_header.scss */
   header .nav-style .nav li:first-of-type a {
     padding: 15px;
   }
 }
-/* line 51, ../scss/widgets/_header.scss */
+/* line 52, ../scss/widgets/_header.scss */
 header .nav-style .nav li:last-of-type a {
   padding-right: 0;
 }
 @media (max-width: 767px) {
-  /* line 51, ../scss/widgets/_header.scss */
+  /* line 52, ../scss/widgets/_header.scss */
   header .nav-style .nav li:last-of-type a {
     padding: 15px;
   }
 }
-/* line 58, ../scss/widgets/_header.scss */
+/* line 59, ../scss/widgets/_header.scss */
 header .nav-style .nav li a {
   position: relative;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 58, ../scss/widgets/_header.scss */
+  /* line 59, ../scss/widgets/_header.scss */
   header .nav-style .nav li a {
     padding-bottom: 5px;
     font-size: 12px;
   }
 }
 @media (max-width: 767px) {
-  /* line 58, ../scss/widgets/_header.scss */
+  /* line 59, ../scss/widgets/_header.scss */
   header .nav-style .nav li a {
     padding: 15px;
     font-size: 14px;
   }
 }
-/* line 68, ../scss/widgets/_header.scss */
+/* line 69, ../scss/widgets/_header.scss */
 header .nav-style .nav li a::before {
   content: "";
   position: absolute;
@@ -8938,12 +8939,12 @@ header .nav-style .nav li a::before {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-/* line 79, ../scss/widgets/_header.scss */
+/* line 80, ../scss/widgets/_header.scss */
 header .nav-style .nav li a:hover::before {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 85, ../scss/widgets/_header.scss */
+/* line 86, ../scss/widgets/_header.scss */
 header .nav-style .nav .orange {
   float: right;
   margin-left: 28px;
@@ -8954,13 +8955,13 @@ header .nav-style .nav .orange {
   border-radius: 18px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 85, ../scss/widgets/_header.scss */
+  /* line 86, ../scss/widgets/_header.scss */
   header .nav-style .nav .orange {
     display: none;
   }
 }
 @media (max-width: 767px) {
-  /* line 85, ../scss/widgets/_header.scss */
+  /* line 86, ../scss/widgets/_header.scss */
   header .nav-style .nav .orange {
     float: none;
     margin: 15px 0 0;

@@ -17,13 +17,14 @@ header {
         }
 
         .nav{
-            margin-left: 76px;
+            float: right;
             text-align: center;
             @include breakpoint(small){
-                margin: 15px 0 0 28px;
+                margin-top: 15px;
             }
             @include breakpoint(extra-small) {
-                margin: 15px auto;
+                float: none;
+                margin: 15px auto 0;
             }
             li{
                 padding-left: 17px;
