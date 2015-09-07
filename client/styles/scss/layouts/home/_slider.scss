@@ -1,0 +1,28 @@
+.slider {
+    .slider-style {
+        .carousel-caption {
+            h2 {
+                font-size: 27px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            p {
+                margin-top: 45px;
+            }
+            ul {
+                margin-top: 45px;
+
+                li {
+                    display: inline-block;
+
+                    .button {
+                        width: 193px;
+                        font-size: 27px;
+                        line-height: 64px;
+                    }
+                }
+            }
+
+        }
+    }
+}

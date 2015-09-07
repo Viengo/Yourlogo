@@ -1,0 +1,20 @@
+{
+  "name": "yourlogo",
+  "version": "0.0.1",
+  "authors": [
+    "Viengo <viengooleg@gmail.com>"
+  ],
+  "description": "yourlogo bootstrap project",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap-sass": "~3.3.5"
+  }
+}
