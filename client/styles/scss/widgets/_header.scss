@@ -17,9 +17,10 @@ header {
         }
 
         .nav{
+            margin-left: 76px;
             text-align: center;
             @include breakpoint(small){
-                margin-top: 15px;
+                margin: 15px 0 0 28px;
             }
             @include breakpoint(extra-small) {
                 margin: 15px auto;
@@ -57,6 +58,7 @@ header {
                 a {
                     position: relative;
                     @include breakpoint(small){
+                        padding-bottom: 5px;
                         font-size: 12px;
                     }
                     @include breakpoint(extra-small){
