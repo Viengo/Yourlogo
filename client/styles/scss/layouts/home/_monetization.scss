@@ -1,0 +1,118 @@
+.monetization {
+    padding: 110px 0 90px;
+    background-image: url("../../images/monetization.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2 {
+        margin-top: 40px;
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #656464;
+        @include breakpoint(medium) {
+            font-size: 27px;
+        }
+        @include breakpoint(small) {
+            font-size: 22px;
+        }
+        @include breakpoint(extra-small) {
+            font-size: 22px;
+        }
+    }
+    span {
+        display: block;
+        margin-top: 20px;
+        font-size: 27px;
+        color: #fcb040;
+        @include breakpoint(medium) {
+            font-size: 22px;
+        }
+        @include breakpoint(small) {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        @include breakpoint(extra-small) {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+    }
+    p {
+        margin-top: 35px;
+        font-size: 25px;
+        color: #656464;
+        @include breakpoint(medium) {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        @include breakpoint(small) {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+        @include breakpoint(extra-small) {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    }
+    ul {
+        margin-top: 45px;
+        font-size: 0;
+        @include breakpoint(medium) {
+            margin-top: 30px;
+        }
+        @include breakpoint(small) {
+            margin-top: 15px;
+        }
+        @include breakpoint(extra-small) {
+            margin-top: 15px;
+        }
+
+        li {
+            display: inline-block;
+            &:nth-child(2) {
+                margin-left: 44px;
+                @include breakpoint(extra-small) {
+                    margin-left: 15px;
+                }
+            }
+
+            .button {
+                width: 193px;
+                font-size: 27px;
+                line-height: 64px;
+                @include breakpoint(medium) {
+                    width: 163px;
+                    font-size: 24px;
+                    line-height: 48px;
+                }
+                @include breakpoint(small) {
+                    width: 140px;
+                    font-size: 20px;
+                    line-height: 40px;
+                }
+                @include breakpoint(extra-small) {
+                    width: 125px;
+                    font-size: 20px;
+                    line-height: 40px;
+                }
+                &.black {
+                    font-size: 24px;
+                    line-height: 60px;
+                    @include breakpoint(medium) {
+                        line-height: 44px;
+                    }
+                    @include breakpoint(small) {
+                        font-size: 20px;
+                        line-height: 36px;
+                    }
+                    @include breakpoint(extra-small) {
+                        font-size: 19px;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+    }
+    img {
+        width: 100%;
+    }
+}

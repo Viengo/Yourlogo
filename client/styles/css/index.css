@@ -8305,11 +8305,23 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 /* line 111, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+.carousel-control.left span {
+  left: 30%;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 116, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-control.right {
   left: auto;
   right: 0;
 }
-/* line 118, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+/* line 120, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+.carousel-control.right span {
+  right: 30%;
+}
+/* line 126, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-control:hover, .carousel-control:focus {
   outline: 0;
   color: #fff;
@@ -8317,7 +8329,7 @@ button.close {
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
-/* line 127, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+/* line 135, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-left,
@@ -8328,19 +8340,19 @@ button.close {
   z-index: 5;
   display: inline-block;
 }
-/* line 137, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+/* line 145, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-control .icon-prev,
 .carousel-control .glyphicon-chevron-left {
   left: 50%;
   margin-left: -10px;
 }
-/* line 142, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+/* line 150, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-right {
   right: 50%;
   margin-right: -10px;
 }
-/* line 147, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+/* line 155, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-control .icon-prev,
 .carousel-control .icon-next {
   width: 20px;
@@ -8348,16 +8360,16 @@ button.close {
   line-height: 1;
   font-family: serif;
 }
-/* line 157, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+/* line 165, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-control .icon-prev:before {
   content: '\2039';
 }
-/* line 162, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+/* line 170, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-control .icon-next:before {
   content: '\203a';
 }
 
-/* line 173, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+/* line 181, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
@@ -8369,7 +8381,7 @@ button.close {
   list-style: none;
   text-align: center;
 }
-/* line 184, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+/* line 192, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-indicators li {
   display: inline-block;
   width: 10px;
@@ -8380,7 +8392,7 @@ button.close {
   border-radius: 10px;
   cursor: pointer;
 }
-/* line 207, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+/* line 215, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-indicators .active {
   margin: 0;
   width: 12px;
@@ -8388,7 +8400,7 @@ button.close {
   background-color: #fcb040;
 }
 
-/* line 218, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+/* line 226, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-caption {
   position: absolute;
   top: 18%;
@@ -8400,13 +8412,13 @@ button.close {
   color: #656464;
   text-align: left;
 }
-/* line 230, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+/* line 238, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-caption .btn {
   text-shadow: none;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 241, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+  /* line 249, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
@@ -8416,25 +8428,25 @@ button.close {
     margin-top: -15px;
     font-size: 30px;
   }
-  /* line 250, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+  /* line 258, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .icon-prev {
     margin-left: -15px;
   }
-  /* line 254, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+  /* line 262, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next {
     margin-right: -15px;
   }
 
-  /* line 261, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+  /* line 269, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
   .carousel-caption {
     top: 18%;
     left: 42%;
     padding-bottom: 30px;
   }
 
-  /* line 269, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
+  /* line 277, ../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss */
   .carousel-indicators {
     bottom: 20px;
   }
@@ -8968,86 +8980,115 @@ header .nav-style .nav .orange {
   }
 }
 
-/* line 3, ../scss/layouts/home/_slider.scss */
+/* line 4, ../scss/layouts/home/_slider.scss */
+.home .slider .slider-style .carousel-control span {
+  position: absolute;
+  top: 35%;
+  width: 98px;
+  height: 72px;
+  border: 1px solid #fff;
+  background-image: url("../../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 4, ../scss/layouts/home/_slider.scss */
+  .home .slider .slider-style .carousel-control span {
+    width: 49px;
+    height: 48px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 4, ../scss/layouts/home/_slider.scss */
+  .home .slider .slider-style .carousel-control span {
+    width: 49px;
+    height: 48px;
+  }
+}
+/* line 23, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption {
   width: 520px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 3, ../scss/layouts/home/_slider.scss */
+  /* line 23, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption {
     width: 400px;
   }
 }
-/* line 8, ../scss/layouts/home/_slider.scss */
+/* line 28, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption h2 {
   font-size: 27px;
   font-weight: 700;
   text-transform: uppercase;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 8, ../scss/layouts/home/_slider.scss */
+  /* line 28, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption h2 {
     font-size: 24px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 8, ../scss/layouts/home/_slider.scss */
+  /* line 28, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption h2 {
     font-size: 20px;
   }
 }
-/* line 19, ../scss/layouts/home/_slider.scss */
+/* line 39, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption p {
   margin-top: 45px;
   font-size: 20px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 19, ../scss/layouts/home/_slider.scss */
+  /* line 39, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption p {
     margin-top: 30px;
     font-size: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 19, ../scss/layouts/home/_slider.scss */
+  /* line 39, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption p {
     margin-top: 15px;
     font-size: 14px;
   }
 }
-/* line 31, ../scss/layouts/home/_slider.scss */
+/* line 50, ../scss/layouts/home/_slider.scss */
+.home .slider .slider-style .carousel-caption p span {
+  font-weight: 700;
+}
+/* line 54, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption ul {
   margin-top: 45px;
   font-size: 0;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 31, ../scss/layouts/home/_slider.scss */
+  /* line 54, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption ul {
     margin-top: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 31, ../scss/layouts/home/_slider.scss */
+  /* line 54, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption ul {
     margin-top: 15px;
   }
 }
-/* line 41, ../scss/layouts/home/_slider.scss */
+/* line 64, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption ul li {
   display: inline-block;
 }
-/* line 43, ../scss/layouts/home/_slider.scss */
+/* line 66, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption ul li:nth-child(2) {
   margin-left: 44px;
 }
-/* line 47, ../scss/layouts/home/_slider.scss */
+/* line 70, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption ul li .button {
   width: 193px;
   font-size: 27px;
   line-height: 64px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 47, ../scss/layouts/home/_slider.scss */
+  /* line 70, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption ul li .button {
     width: 163px;
     font-size: 24px;
@@ -9055,10 +9096,203 @@ header .nav-style .nav .orange {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 47, ../scss/layouts/home/_slider.scss */
+  /* line 70, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption ul li .button {
     width: 163px;
     font-size: 20px;
     line-height: 40px;
   }
+}
+/* line 84, ../scss/layouts/home/_slider.scss */
+.home .slider .slider-style .carousel-caption ul li .button.black {
+  font-size: 24px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 84, ../scss/layouts/home/_slider.scss */
+  .home .slider .slider-style .carousel-caption ul li .button.black {
+    font-size: 20px;
+  }
+}
+/* line 1, ../scss/layouts/home/_monetization.scss */
+.home .monetization {
+  padding: 110px 0 90px;
+  background-image: url("../../images/monetization.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 6, ../scss/layouts/home/_monetization.scss */
+.home .monetization h2 {
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #656464;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 6, ../scss/layouts/home/_monetization.scss */
+  .home .monetization h2 {
+    font-size: 27px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 6, ../scss/layouts/home/_monetization.scss */
+  .home .monetization h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 6, ../scss/layouts/home/_monetization.scss */
+  .home .monetization h2 {
+    font-size: 22px;
+  }
+}
+/* line 22, ../scss/layouts/home/_monetization.scss */
+.home .monetization span {
+  display: block;
+  margin-top: 20px;
+  font-size: 27px;
+  color: #fcb040;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 22, ../scss/layouts/home/_monetization.scss */
+  .home .monetization span {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 22, ../scss/layouts/home/_monetization.scss */
+  .home .monetization span {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 22, ../scss/layouts/home/_monetization.scss */
+  .home .monetization span {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+/* line 39, ../scss/layouts/home/_monetization.scss */
+.home .monetization p {
+  margin-top: 35px;
+  font-size: 25px;
+  color: #656464;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 39, ../scss/layouts/home/_monetization.scss */
+  .home .monetization p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 39, ../scss/layouts/home/_monetization.scss */
+  .home .monetization p {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 39, ../scss/layouts/home/_monetization.scss */
+  .home .monetization p {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+}
+/* line 56, ../scss/layouts/home/_monetization.scss */
+.home .monetization ul {
+  margin-top: 45px;
+  font-size: 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 56, ../scss/layouts/home/_monetization.scss */
+  .home .monetization ul {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 56, ../scss/layouts/home/_monetization.scss */
+  .home .monetization ul {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 56, ../scss/layouts/home/_monetization.scss */
+  .home .monetization ul {
+    margin-top: 15px;
+  }
+}
+/* line 69, ../scss/layouts/home/_monetization.scss */
+.home .monetization ul li {
+  display: inline-block;
+}
+/* line 71, ../scss/layouts/home/_monetization.scss */
+.home .monetization ul li:nth-child(2) {
+  margin-left: 44px;
+}
+@media (max-width: 767px) {
+  /* line 71, ../scss/layouts/home/_monetization.scss */
+  .home .monetization ul li:nth-child(2) {
+    margin-left: 15px;
+  }
+}
+/* line 78, ../scss/layouts/home/_monetization.scss */
+.home .monetization ul li .button {
+  width: 193px;
+  font-size: 27px;
+  line-height: 64px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 78, ../scss/layouts/home/_monetization.scss */
+  .home .monetization ul li .button {
+    width: 163px;
+    font-size: 24px;
+    line-height: 48px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 78, ../scss/layouts/home/_monetization.scss */
+  .home .monetization ul li .button {
+    width: 140px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 78, ../scss/layouts/home/_monetization.scss */
+  .home .monetization ul li .button {
+    width: 125px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+/* line 97, ../scss/layouts/home/_monetization.scss */
+.home .monetization ul li .button.black {
+  font-size: 24px;
+  line-height: 60px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 97, ../scss/layouts/home/_monetization.scss */
+  .home .monetization ul li .button.black {
+    line-height: 44px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 97, ../scss/layouts/home/_monetization.scss */
+  .home .monetization ul li .button.black {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 97, ../scss/layouts/home/_monetization.scss */
+  .home .monetization ul li .button.black {
+    font-size: 19px;
+    line-height: 36px;
+  }
+}
+/* line 115, ../scss/layouts/home/_monetization.scss */
+.home .monetization img {
+  width: 100%;
 }
