@@ -9296,3 +9296,89 @@ header .nav-style .nav .orange {
 .home .monetization img {
   width: 100%;
 }
+/* line 1, ../scss/layouts/home/_partners.scss */
+.home .partners {
+  padding: 90px 15px 90px;
+  background-image: url("../../images/partners.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+/* line 8, ../scss/layouts/home/_partners.scss */
+.home .partners h2 {
+  margin-top: 5px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #656464;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 8, ../scss/layouts/home/_partners.scss */
+  .home .partners h2 {
+    font-size: 27px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 8, ../scss/layouts/home/_partners.scss */
+  .home .partners h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 8, ../scss/layouts/home/_partners.scss */
+  .home .partners h2 {
+    font-size: 22px;
+  }
+}
+/* line 24, ../scss/layouts/home/_partners.scss */
+.home .partners ul {
+  margin-top: 85px;
+  font-size: 0;
+  text-align: center;
+}
+/* line 29, ../scss/layouts/home/_partners.scss */
+.home .partners ul li {
+  display: inline-block;
+  margin-left: 60px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 29, ../scss/layouts/home/_partners.scss */
+  .home .partners ul li {
+    max-width: 185px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 29, ../scss/layouts/home/_partners.scss */
+  .home .partners ul li {
+    max-width: 150px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 29, ../scss/layouts/home/_partners.scss */
+  .home .partners ul li {
+    display: block;
+    margin: 20px 0 0;
+  }
+}
+/* line 44, ../scss/layouts/home/_partners.scss */
+.home .partners ul li:first-child {
+  margin-left: 0;
+}
+/* line 47, ../scss/layouts/home/_partners.scss */
+.home .partners ul li a {
+  margin: 0;
+}
+/* line 50, ../scss/layouts/home/_partners.scss */
+.home .partners ul li a img {
+  width: 100%;
+  vertical-align: top;
+}
+/* line 57, ../scss/layouts/home/_partners.scss */
+.home .partners a {
+  display: inline-block;
+  margin-top: 60px;
+  font-size: 25px;
+  text-decoration: underline;
+  color: #656464;
+}
