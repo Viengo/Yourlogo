@@ -1,0 +1,124 @@
+.autopilot {
+    padding: 130px 0 90px;
+    background-image: url("../../images/autopilot.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include breakpoint(extra-small) {
+        padding: 60px 0 40px;
+    }
+
+    h2 {
+        font-size: 27px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        @include breakpoint(extra-small) {
+            font-size: 22px;
+        }
+    }
+    .large-up {
+        padding-top: 60px;
+        @include breakpoint(large-up) {
+            width: 1462px;
+        }
+        @include breakpoint(extra-small) {
+            padding-top: 20px;
+        }
+
+        .revenue {
+            display: inline-block;
+            width: 420px;
+            margin-left: 80px;
+            vertical-align: top;
+            @include breakpoint(large-up) {
+                width: 420px;
+            }
+            @include breakpoint(large) {
+                width: 350px;
+                margin-left: 50px;
+            }
+            @include breakpoint(medium) {
+                width: 290px;
+                margin-left: 30px;
+            }
+            @include breakpoint(small) {
+                width: 220px;
+                margin-left: 25px;
+            }
+            @include breakpoint(extra-small) {
+                display: block;
+                width: 100%;
+                margin: 35px auto 0;
+            }
+            &:first-child {
+                margin-left: 0;
+                @include breakpoint(extra-small) {
+                    margin: 35px auto 0;
+                }
+            }
+        }
+        h3 {
+            position: relative;
+            padding-left: 55px;
+            font-size: 26px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #656464;
+            @include breakpoint(large) {
+                font-size: 22px;
+            }
+            @include breakpoint(medium) {
+                font-size: 24px;
+            }
+            @include breakpoint(small) {
+                padding-left: 40px;
+                font-size: 19px;
+            }
+            @include breakpoint(extra-small) {
+                padding-left: 40px;
+                font-size: 19px;
+
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: 0;
+                display: block;
+                width: 34px;
+                height: 33px;
+                background-image: url("../../images/ok.png");
+            }
+        }
+        p {
+            margin-top: 25px;
+            font-size: 24px;
+            color: #fff;
+            @include breakpoint(large) {
+                font-size: 20px;
+            }
+            @include breakpoint(medium) {
+                font-size: 18px;
+            }
+            @include breakpoint(small) {
+                font-size: 16px;
+            }
+            @include breakpoint(extra-small) {
+                font-size: 16px;
+            }
+        }
+    }
+    .button {
+        display: block;
+        width: 193px;
+        margin: 65px auto 0;
+        font-size: 27px;
+        line-height: 64px;
+        @include breakpoint(extra-small) {
+            width: 140px;
+            font-size: 22px;
+            line-height: 50px;
+        }
+    }
+}

@@ -25,6 +25,8 @@ header {
             @include breakpoint(extra-small) {
                 float: none;
                 margin: 15px auto 0;
+                padding-bottom: 20px;
+                background-color: #fff;
             }
             li{
                 padding-left: 17px;
