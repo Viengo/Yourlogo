@@ -4,15 +4,17 @@ header {
     top: 0;
     width: 100%;
     .nav-style {
-
-        img {
-            @include breakpoint(medium){
-                width: 120px;
-                margin-top: 20px;
-            }
-            @include breakpoint(small){
-                width: 100px;
-                margin-top: 10px;
+        .navbar-header{
+            padding: 0 15px;
+            img {
+                @include breakpoint(medium){
+                    width: 120px;
+                    margin-top: 20px;
+                }
+                @include breakpoint(small){
+                    width: 100px;
+                    margin-top: 10px;
+                }
             }
         }
 
@@ -91,13 +93,6 @@ header {
                 padding: 10px 18px;
                 border: none;
                 @include border-radius(18px);
-                @include breakpoint(small){
-                    display: none;
-                }
-                @include breakpoint(extra-small){
-                    float: none;
-                    margin: 15px 0 0;
-                }
             }
         }
     }

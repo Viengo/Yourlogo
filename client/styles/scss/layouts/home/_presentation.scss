@@ -1,0 +1,99 @@
+.presentation {
+    padding: 70px 0 40px;
+    @include breakpoint(extra-small) {
+        padding: 30px 0 20px;
+    }
+    .interface {
+        float: right;
+        width: 49%;
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+    .caption {
+        float: right;
+        width: 525px;
+        margin-right: 75px;
+        padding: 0 15px;
+        @include breakpoint(medium) {
+            width: 450px;
+            margin-right: 35px;
+        }
+        @include breakpoint(small) {
+            width: 350px;
+            margin-right: 25px;
+        }
+        @include breakpoint(extra-small) {
+            float: none;
+            width: 100%;
+            margin: 0 auto;
+        }
+        h2 {
+            margin-top: 40px;
+            font-size: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #656464;
+            @include breakpoint(medium) {
+                font-size: 27px;
+            }
+            @include breakpoint(small) {
+                font-size: 22px;
+            }
+            @include breakpoint(extra-small) {
+                font-size: 22px;
+            }
+        }
+        span {
+            display: block;
+            margin-top: 20px;
+            font-size: 27px;
+            color: #fcb040;
+            @include breakpoint(medium) {
+                font-size: 22px;
+            }
+            @include breakpoint(small) {
+                margin-top: 10px;
+                font-size: 20px;
+            }
+            @include breakpoint(extra-small) {
+                margin-top: 10px;
+                font-size: 20px;
+            }
+        }
+        p {
+            margin-top: 25px;
+            font-size: 25px;
+            color: #656464;
+            @include breakpoint(medium) {
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            @include breakpoint(small) {
+                margin-top: 15px;
+                font-size: 18px;
+            }
+            @include breakpoint(extra-small) {
+                margin-top: 15px;
+                font-size: 18px;
+            }
+        }
+        .button {
+            width: 193px;
+            margin-top: 20px;
+            font-size: 27px;
+            line-height: 64px;
+            @include breakpoint(small) {
+                width: 140px;
+                font-size: 22px;
+                line-height: 50px;
+            }
+            @include breakpoint(extra-small) {
+                width: 140px;
+                font-size: 22px;
+                line-height: 50px;
+            }
+        }
+    }
+}
