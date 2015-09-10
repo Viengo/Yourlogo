@@ -8914,7 +8914,6 @@ button.close {
   height: 32px;
   margin-top: -16px;
   margin-left: -16px;
-  background-image: url("../../images/slide/pointer.png");
   background-repeat: no-repeat;
   cursor: pointer;
   opacity: 0.3;
@@ -9669,12 +9668,12 @@ img.rsImg {
 
 /* line 237, ../scss/lib/_rs.scss */
 .grab-cursor {
-  cursor: url(../../images/slide/grab.png) 8 8, move;
+  cursor: url(../../lib/rs/royalslider/grab.png) 8 8, move;
 }
 
 /* line 241, ../scss/lib/_rs.scss */
 .grabbing-cursor {
-  cursor: url(../../images/slide/grabbing.png) 8 8, move;
+  cursor: url(../../lib/rs/royalslider/grabbing.png) 8 8, move;
 }
 
 /* line 245, ../scss/lib/_rs.scss */
@@ -9691,7 +9690,7 @@ img.rsImg {
   height: 100%;
   display: block;
   z-index: 20;
-  background: url(../../images/slide/blank.gif);
+  background: url(../../lib/rs/royalslider/blank.gif);
 }
 
 /* line 72, social/*.png */
@@ -9714,19 +9713,20 @@ body {
 /* line 1, ../scss/components/_button.scss */
 .button {
   display: inline-block;
+  vertical-align: top;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 5, ../scss/components/_button.scss */
+/* line 6, ../scss/components/_button.scss */
 .button:hover {
   text-decoration: none;
 }
-/* line 9, ../scss/components/_button.scss */
+/* line 10, ../scss/components/_button.scss */
 .button.orange {
   background-color: #fcb040;
   color: #fff;
 }
-/* line 13, ../scss/components/_button.scss */
+/* line 14, ../scss/components/_button.scss */
 .button.black {
   border: 2px solid #656464;
   color: #656464;
@@ -10092,11 +10092,26 @@ footer .social {
 /* line 102, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption ul li .button.black {
   font-size: 24px;
+  line-height: 60px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 102, ../scss/layouts/home/_slider.scss */
+  .home .slider .slider-style .carousel-caption ul li .button.black {
+    line-height: 44px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 102, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption ul li .button.black {
     font-size: 20px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 102, ../scss/layouts/home/_slider.scss */
+  .home .slider .slider-style .carousel-caption ul li .button.black {
+    font-size: 19px;
+    line-height: 36px;
   }
 }
 /* line 1, ../scss/layouts/home/_monetization.scss */
@@ -10558,6 +10573,9 @@ footer .social {
 /* line 1, ../scss/layouts/home/_presentation.scss */
 .home .presentation {
   padding: 70px 0 40px;
+  background-image: url("../../images/formats-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (max-width: 767px) {
   /* line 1, ../scss/layouts/home/_presentation.scss */
@@ -10565,17 +10583,17 @@ footer .social {
     padding: 30px 0 20px;
   }
 }
-/* line 6, ../scss/layouts/home/_presentation.scss */
+/* line 9, ../scss/layouts/home/_presentation.scss */
 .home .presentation .interface {
   float: right;
   width: 49%;
 }
-/* line 9, ../scss/layouts/home/_presentation.scss */
+/* line 12, ../scss/layouts/home/_presentation.scss */
 .home .presentation .interface img {
   width: 100%;
   vertical-align: top;
 }
-/* line 14, ../scss/layouts/home/_presentation.scss */
+/* line 17, ../scss/layouts/home/_presentation.scss */
 .home .presentation .caption {
   float: right;
   width: 525px;
@@ -10583,28 +10601,28 @@ footer .social {
   padding: 0 15px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 14, ../scss/layouts/home/_presentation.scss */
+  /* line 17, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption {
     width: 450px;
     margin-right: 35px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 14, ../scss/layouts/home/_presentation.scss */
+  /* line 17, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption {
     width: 350px;
     margin-right: 25px;
   }
 }
 @media (max-width: 767px) {
-  /* line 14, ../scss/layouts/home/_presentation.scss */
+  /* line 17, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption {
     float: none;
     width: 100%;
     margin: 0 auto;
   }
 }
-/* line 32, ../scss/layouts/home/_presentation.scss */
+/* line 35, ../scss/layouts/home/_presentation.scss */
 .home .presentation .caption h2 {
   margin-top: 40px;
   font-size: 32px;
@@ -10613,24 +10631,24 @@ footer .social {
   color: #656464;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 32, ../scss/layouts/home/_presentation.scss */
+  /* line 35, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption h2 {
     font-size: 27px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 32, ../scss/layouts/home/_presentation.scss */
+  /* line 35, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption h2 {
     font-size: 22px;
   }
 }
 @media (max-width: 767px) {
-  /* line 32, ../scss/layouts/home/_presentation.scss */
+  /* line 35, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption h2 {
     font-size: 22px;
   }
 }
-/* line 48, ../scss/layouts/home/_presentation.scss */
+/* line 51, ../scss/layouts/home/_presentation.scss */
 .home .presentation .caption span {
   display: block;
   margin-top: 20px;
@@ -10638,53 +10656,53 @@ footer .social {
   color: #fcb040;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 48, ../scss/layouts/home/_presentation.scss */
+  /* line 51, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption span {
     font-size: 22px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 48, ../scss/layouts/home/_presentation.scss */
+  /* line 51, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption span {
     margin-top: 10px;
     font-size: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 48, ../scss/layouts/home/_presentation.scss */
+  /* line 51, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption span {
     margin-top: 10px;
     font-size: 20px;
   }
 }
-/* line 65, ../scss/layouts/home/_presentation.scss */
+/* line 68, ../scss/layouts/home/_presentation.scss */
 .home .presentation .caption p {
   margin-top: 25px;
   font-size: 25px;
   color: #656464;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 65, ../scss/layouts/home/_presentation.scss */
+  /* line 68, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption p {
     margin-top: 20px;
     font-size: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 65, ../scss/layouts/home/_presentation.scss */
+  /* line 68, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption p {
     margin-top: 15px;
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  /* line 65, ../scss/layouts/home/_presentation.scss */
+  /* line 68, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption p {
     margin-top: 15px;
     font-size: 18px;
   }
 }
-/* line 82, ../scss/layouts/home/_presentation.scss */
+/* line 85, ../scss/layouts/home/_presentation.scss */
 .home .presentation .caption .button {
   width: 193px;
   margin-top: 20px;
@@ -10692,7 +10710,7 @@ footer .social {
   line-height: 64px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 82, ../scss/layouts/home/_presentation.scss */
+  /* line 85, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption .button {
     width: 140px;
     font-size: 22px;
@@ -10700,16 +10718,57 @@ footer .social {
   }
 }
 @media (max-width: 767px) {
-  /* line 82, ../scss/layouts/home/_presentation.scss */
+  /* line 85, ../scss/layouts/home/_presentation.scss */
   .home .presentation .caption .button {
     width: 140px;
     font-size: 22px;
     line-height: 50px;
   }
 }
-/* line 99, ../scss/layouts/home/_presentation.scss */
+/* line 102, ../scss/layouts/home/_presentation.scss */
+.home .presentation h3 {
+  margin-top: 160px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #444e5d;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 102, ../scss/layouts/home/_presentation.scss */
+  .home .presentation h3 {
+    margin-top: 60px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 102, ../scss/layouts/home/_presentation.scss */
+  .home .presentation h3 {
+    margin-top: 60px;
+    font-size: 22px;
+  }
+}
+/* line 118, ../scss/layouts/home/_presentation.scss */
 .home .presentation .rs-wrap {
-  margin-top: 100px;
+  padding: 175px 0 235px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 118, ../scss/layouts/home/_presentation.scss */
+  .home .presentation .rs-wrap {
+    padding: 100px 0 135px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 118, ../scss/layouts/home/_presentation.scss */
+  .home .presentation .rs-wrap {
+    padding: 40px 0 50px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 118, ../scss/layouts/home/_presentation.scss */
+  .home .presentation .rs-wrap {
+    padding: 25px 0 35px;
+  }
 }
 /* line 1, ../scss/layouts/home/_contact.scss */
 .home .contact {

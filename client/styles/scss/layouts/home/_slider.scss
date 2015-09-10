@@ -101,8 +101,17 @@
                         }
                         &.black {
                             font-size: 24px;
+                            line-height: 60px;
+                            @include breakpoint(medium) {
+                                line-height: 44px;
+                            }
                             @include breakpoint(small) {
                                 font-size: 20px;
+                                line-height: 36px;
+                            }
+                            @include breakpoint(extra-small) {
+                                font-size: 19px;
+                                line-height: 36px;
                             }
                         }
                     }
