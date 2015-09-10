@@ -13,6 +13,7 @@ module.exports = function (grunt) {
                 src: [
                 'bower_components/jquery/dist/jquery.min.js',
                 'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+                'client/lib/rs/royalslider/jquery.royalslider.min.js',
                 'client/js/index.js'
                 ],
                 dest: 'build/js/concat/index.js'

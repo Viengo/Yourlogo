@@ -5,33 +5,25 @@ $(function () {
         }
     });
 });
-
-$(function () {
-var $clientcarousel = $('#clients-list');
-var clients = $clientcarousel.children().length;
-var clientwidth = (clients * 425); // 140px width for each client item
-$clientcarousel.css('width',clientwidth);
-
-var rotating = true;
-var clientspeed = 3000;
-var seeclients = setInterval(rotateClients, clientspeed);
-
-$(document).on({
-    mouseenter: function(){
-        rotating = false; // turn off rotation when hovering
-    },
-    mouseleave: function(){
-        rotating = true;
-    }
-}, '#clients');
-
-function rotateClients() {
-    if(rotating != false) {
-        var $first = $('#clients-list li:first');
-        $first.animate({ 'margin-left': '-425px' }, 600, function() {
-            $first.remove().css({ 'margin-left': '100px' });
-            $('#clients-list li:last').after($first);
-        });
-    }
-}
+jQuery(document).ready(function($) {
+    $(".royalSlider").royalSlider({
+        // general options go gere
+        keyboardNavEnabled: true,
+        numImagesToPreload: 5,
+        loop: true,
+        startSlideId: 3,
+        addActiveClass: true,
+        autoplay: {
+            enabled: true,
+            delay: 1000
+        },
+        visibleNearby: {
+            enabled: true,
+            centerArea: 0.22,
+            center: true,
+            breakpoint: 650,
+            breakpointCenterArea: 0.2,
+            navigateByCenterClick: true
+        }
+    });
 });
