@@ -1,8 +1,11 @@
 .slider {
     .slider-style {
         .carousel-control {
+            @include breakpoint(small) {
+                width: 10%;
+            }
             span {
-                position:absolute;
+                position: absolute;
                 top: 35%;
                 width: 98px;
                 height: 72px;
@@ -10,16 +13,31 @@
                 background-image: url('../../images/arrow.png');
                 background-repeat: no-repeat;
                 background-position: center;
-                @include breakpoint(medium){
+                @include breakpoint(medium) {
                     width: 49px;
                     height: 48px;
                 }
-                @include breakpoint(small){
+                @include breakpoint(small) {
                     width: 49px;
                     height: 48px;
                 }
             }
+            &.left {
+                span {
+                    @include breakpoint(small) {
+                        left: 10%;
+                    }
+                }
+            }
+            &.right {
+                span {
+                    @include breakpoint(small) {
+                        right: 10%;
+                    }
+                }
+            }
         }
+
         .carousel-caption {
             width: 520px;
             @include breakpoint(small) {

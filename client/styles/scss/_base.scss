@@ -1,0 +1,9 @@
+body {
+    position: relative;
+
+    .large-up {
+        @include breakpoint(large-up) {
+            width: 1462px;
+        }
+    }
+}

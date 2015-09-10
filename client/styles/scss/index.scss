@@ -1,6 +1,7 @@
 //libs
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/utilities/sprites";
 @import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 
@@ -8,17 +9,22 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 //sprites
-
+@import "social/*.png";
 
 //mixins
 @import "mixins/breackpoints";
 @import "mixins/user-select";
 
+@import "base";
+
+
 //components
 @import "components/button";
 
 //widgets
+@import "widgets/social";
 @import "widgets/header";
+@import "widgets/footer";
 
 //layouts
 @import "layouts/home";

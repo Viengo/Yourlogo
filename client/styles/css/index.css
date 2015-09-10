@@ -8812,6 +8812,23 @@ button.close {
     display: none !important;
   }
 }
+/* line 72, social/*.png */
+.social-sprite, .social li:first-child a, .social li:nth-child(2) a, .social li:nth-child(3) a, .social li:nth-child(4) a {
+  background-image: url('../../images/social-sca1a66048a.png');
+  background-repeat: no-repeat;
+}
+
+/* line 1, ../scss/_base.scss */
+body {
+  position: relative;
+}
+@media (min-width: 1480px) {
+  /* line 4, ../scss/_base.scss */
+  body .large-up {
+    width: 1462px;
+  }
+}
+
 /* line 1, ../scss/components/_button.scss */
 .button {
   display: inline-block;
@@ -8831,6 +8848,47 @@ button.close {
 .button.black {
   border: 2px solid #656464;
   color: #656464;
+}
+
+/* line 1, ../scss/widgets/_social.scss */
+.social {
+  font-size: 0;
+}
+/* line 3, ../scss/widgets/_social.scss */
+.social li {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin-left: 20px;
+  border: 4px solid rgba(218, 217, 217, 0.7);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 11, ../scss/widgets/_social.scss */
+.social li:first-child {
+  margin-left: 0;
+}
+/* line 13, ../scss/widgets/_social.scss */
+.social li:first-child a {
+  background-position: 0 -70px;
+}
+/* line 18, ../scss/widgets/_social.scss */
+.social li:nth-child(2) a {
+  background-position: 0 -105px;
+}
+/* line 23, ../scss/widgets/_social.scss */
+.social li:nth-child(3) a {
+  background-position: 0 -35px;
+}
+/* line 28, ../scss/widgets/_social.scss */
+.social li:nth-child(4) a {
+  background-position: 0 0;
+}
+/* line 33, ../scss/widgets/_social.scss */
+.social li a {
+  display: block;
+  height: 35px;
 }
 
 /* line 1, ../scss/widgets/_header.scss */
@@ -8874,77 +8932,76 @@ header .nav-style .nav {
   header .nav-style .nav {
     float: none;
     margin: 15px auto 0;
-    padding-bottom: 20px;
     background-color: #fff;
   }
 }
-/* line 33, ../scss/widgets/_header.scss */
+/* line 32, ../scss/widgets/_header.scss */
 header .nav-style .nav li {
   padding-left: 17px;
   border-bottom: 1px solid #f3e2dd;
   text-align: center;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 33, ../scss/widgets/_header.scss */
+  /* line 32, ../scss/widgets/_header.scss */
   header .nav-style .nav li {
     padding-left: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 33, ../scss/widgets/_header.scss */
+  /* line 32, ../scss/widgets/_header.scss */
   header .nav-style .nav li {
     padding-left: 10px;
   }
 }
 @media (max-width: 767px) {
-  /* line 33, ../scss/widgets/_header.scss */
+  /* line 32, ../scss/widgets/_header.scss */
   header .nav-style .nav li {
     padding: 0;
   }
 }
-/* line 46, ../scss/widgets/_header.scss */
+/* line 45, ../scss/widgets/_header.scss */
 header .nav-style .nav li:first-of-type {
   padding-left: 0;
 }
-/* line 48, ../scss/widgets/_header.scss */
+/* line 47, ../scss/widgets/_header.scss */
 header .nav-style .nav li:first-of-type a {
   padding-left: 0;
 }
 @media (max-width: 767px) {
-  /* line 48, ../scss/widgets/_header.scss */
+  /* line 47, ../scss/widgets/_header.scss */
   header .nav-style .nav li:first-of-type a {
     padding: 15px;
   }
 }
-/* line 56, ../scss/widgets/_header.scss */
+/* line 55, ../scss/widgets/_header.scss */
 header .nav-style .nav li:last-of-type a {
   padding-right: 0;
 }
 @media (max-width: 767px) {
-  /* line 56, ../scss/widgets/_header.scss */
+  /* line 55, ../scss/widgets/_header.scss */
   header .nav-style .nav li:last-of-type a {
     padding: 15px;
   }
 }
-/* line 63, ../scss/widgets/_header.scss */
+/* line 62, ../scss/widgets/_header.scss */
 header .nav-style .nav li a {
   position: relative;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 63, ../scss/widgets/_header.scss */
+  /* line 62, ../scss/widgets/_header.scss */
   header .nav-style .nav li a {
     padding-bottom: 5px;
     font-size: 12px;
   }
 }
 @media (max-width: 767px) {
-  /* line 63, ../scss/widgets/_header.scss */
+  /* line 62, ../scss/widgets/_header.scss */
   header .nav-style .nav li a {
     padding: 15px;
     font-size: 14px;
   }
 }
-/* line 73, ../scss/widgets/_header.scss */
+/* line 72, ../scss/widgets/_header.scss */
 header .nav-style .nav li a::before {
   content: "";
   position: absolute;
@@ -8956,12 +9013,12 @@ header .nav-style .nav li a::before {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-/* line 84, ../scss/widgets/_header.scss */
+/* line 83, ../scss/widgets/_header.scss */
 header .nav-style .nav li a:hover::before {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 90, ../scss/widgets/_header.scss */
+/* line 89, ../scss/widgets/_header.scss */
 header .nav-style .nav .orange {
   float: right;
   margin-left: 28px;
@@ -8972,7 +9029,50 @@ header .nav-style .nav .orange {
   border-radius: 18px;
 }
 
-/* line 4, ../scss/layouts/home/_slider.scss */
+/* line 1, ../scss/widgets/_footer.scss */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 37px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 7, ../scss/widgets/_footer.scss */
+footer p {
+  float: left;
+  margin-top: 5px;
+  font-size: 25px;
+  color: #dad9d9;
+}
+@media (max-width: 767px) {
+  /* line 7, ../scss/widgets/_footer.scss */
+  footer p {
+    float: none;
+    margin: 25px auto 0;
+    text-align: center;
+  }
+}
+/* line 18, ../scss/widgets/_footer.scss */
+footer .social {
+  float: right;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  /* line 18, ../scss/widgets/_footer.scss */
+  footer .social {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 3, ../scss/layouts/home/_slider.scss */
+  .home .slider .slider-style .carousel-control {
+    width: 10%;
+  }
+}
+/* line 7, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-control span {
   position: absolute;
   top: 35%;
@@ -8984,103 +9084,115 @@ header .nav-style .nav .orange {
   background-position: center;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 4, ../scss/layouts/home/_slider.scss */
+  /* line 7, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-control span {
     width: 49px;
     height: 48px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 4, ../scss/layouts/home/_slider.scss */
+  /* line 7, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-control span {
     width: 49px;
     height: 48px;
   }
 }
-/* line 23, ../scss/layouts/home/_slider.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 26, ../scss/layouts/home/_slider.scss */
+  .home .slider .slider-style .carousel-control.left span {
+    left: 10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 33, ../scss/layouts/home/_slider.scss */
+  .home .slider .slider-style .carousel-control.right span {
+    right: 10%;
+  }
+}
+/* line 41, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption {
   width: 520px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 23, ../scss/layouts/home/_slider.scss */
+  /* line 41, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption {
     width: 400px;
   }
 }
-/* line 28, ../scss/layouts/home/_slider.scss */
+/* line 46, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption h2 {
   font-size: 27px;
   font-weight: 700;
   text-transform: uppercase;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 28, ../scss/layouts/home/_slider.scss */
+  /* line 46, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption h2 {
     font-size: 24px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 28, ../scss/layouts/home/_slider.scss */
+  /* line 46, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption h2 {
     font-size: 20px;
   }
 }
-/* line 39, ../scss/layouts/home/_slider.scss */
+/* line 57, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption p {
   margin-top: 45px;
   font-size: 20px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 39, ../scss/layouts/home/_slider.scss */
+  /* line 57, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption p {
     margin-top: 30px;
     font-size: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 39, ../scss/layouts/home/_slider.scss */
+  /* line 57, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption p {
     margin-top: 15px;
     font-size: 14px;
   }
 }
-/* line 50, ../scss/layouts/home/_slider.scss */
+/* line 68, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption p span {
   font-weight: 700;
 }
-/* line 54, ../scss/layouts/home/_slider.scss */
+/* line 72, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption ul {
   margin-top: 45px;
   font-size: 0;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 54, ../scss/layouts/home/_slider.scss */
+  /* line 72, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption ul {
     margin-top: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 54, ../scss/layouts/home/_slider.scss */
+  /* line 72, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption ul {
     margin-top: 15px;
   }
 }
-/* line 64, ../scss/layouts/home/_slider.scss */
+/* line 82, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption ul li {
   display: inline-block;
 }
-/* line 66, ../scss/layouts/home/_slider.scss */
+/* line 84, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption ul li:nth-child(2) {
   margin-left: 44px;
 }
-/* line 70, ../scss/layouts/home/_slider.scss */
+/* line 88, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption ul li .button {
   width: 193px;
   font-size: 27px;
   line-height: 64px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 70, ../scss/layouts/home/_slider.scss */
+  /* line 88, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption ul li .button {
     width: 163px;
     font-size: 24px;
@@ -9088,19 +9200,19 @@ header .nav-style .nav .orange {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 70, ../scss/layouts/home/_slider.scss */
+  /* line 88, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption ul li .button {
     width: 163px;
     font-size: 20px;
     line-height: 40px;
   }
 }
-/* line 84, ../scss/layouts/home/_slider.scss */
+/* line 102, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .carousel-caption ul li .button.black {
   font-size: 24px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 84, ../scss/layouts/home/_slider.scss */
+  /* line 102, ../scss/layouts/home/_slider.scss */
   .home .slider .slider-style .carousel-caption ul li .button.black {
     font-size: 20px;
   }
@@ -9712,4 +9824,51 @@ header .nav-style .nav .orange {
     font-size: 22px;
     line-height: 50px;
   }
+}
+/* line 99, ../scss/layouts/home/_presentation.scss */
+.home .presentation .carousel-wrap {
+  overflow: hidden;
+  margin-top: 100px;
+}
+/* line 103, ../scss/layouts/home/_presentation.scss */
+.home .presentation .carousel-wrap .formats-carousel li {
+  float: left;
+  width: 180px;
+  margin-left: 100px;
+}
+/* line 107, ../scss/layouts/home/_presentation.scss */
+.home .presentation .carousel-wrap .formats-carousel li img {
+  width: 100%;
+}
+/* line 1, ../scss/layouts/home/_contact.scss */
+.home .contact {
+  padding: 80px 0 210px;
+  background-image: url("../../images/contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+/* line 7, ../scss/layouts/home/_contact.scss */
+.home .contact h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* line 13, ../scss/layouts/home/_contact.scss */
+.home .contact h2 span {
+  color: #fcb040;
+}
+/* line 17, ../scss/layouts/home/_contact.scss */
+.home .contact p {
+  margin-top: 55px;
+  font-size: 25px;
+  color: #fff;
+}
+/* line 22, ../scss/layouts/home/_contact.scss */
+.home .contact .button {
+  width: 225px;
+  margin-top: 55px;
+  font-size: 27px;
+  line-height: 64px;
 }

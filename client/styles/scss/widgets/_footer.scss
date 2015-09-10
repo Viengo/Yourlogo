@@ -1,0 +1,27 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 37px 0;
+    background-color: rgba(#fff, 0.2);
+    p {
+        float: left;
+        margin-top: 5px;
+        font-size: 25px;
+        color: #dad9d9;
+        @include breakpoint(extra-small) {
+            float: none;
+            margin: 25px auto 0;
+            text-align: center;
+        }
+    }
+    .social {
+        float: right;
+        margin: 0;
+        @include breakpoint(extra-small) {
+            float: none;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
